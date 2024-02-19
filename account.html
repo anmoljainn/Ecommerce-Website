@@ -15,20 +15,20 @@
     <div class="container">
         <div class="navbar">
             <div class="logo">
-                <img src="/images/logo.png" width="125px">
+                <img src="images/logo.png" width="125px">
 
             </div>
             <nav>
                 <ul id="MenuItems">
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/Products.html">Product</a></li>
-                    <li><a href="/product-details.html">About</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Products.html">Product</a></li>
+                    <li><a href="product-details.html">About</a></li>
 
-                    <li><a href="/account.html">Account</a></li>
+                    <li><a href="account.html">Account</a></li>
                 </ul>
             </nav>
-            <a href="/cart.html"><img src="/images/cart.png" width="30px" height="30px"></a>
-            <img src="/images/menu.png" class="menu-icon" onclick="menutoggle()">
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
         </div>
 
     </div>
@@ -38,7 +38,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-2">
-                    <img src="/images/image1.png" width="100%">
+                    <img src="images/image1.png" width="100%">
                 </div>
                 <div class="col-2">
                     <div class="form-container">
@@ -47,16 +47,22 @@
                             <span onclick="register()">Register</span>
                             <hr id="Indicator">
                         </div>
-                        <form id="LoginForm">
-                            <input type="text" placeholder="Username">
-                            <input type="password" placeholder="Password">
+                        <form id="LoginForm" action="/server">
+                            <label for="user1"></label>
+                            <input type="text" name="userName" id="user1" placeholder="Username" value="">
+
+                            <label for="pass"></label>
+                            <input type="password" name="password" placeholder="Password" id="pass">
                             <button type="submit" class="btn">Login</button>
                             <a href="">Forget Password</a>
                         </form>
-                        <form id="RegForm">
-                            <input type="text" placeholder="Username">
-                            <input type="email" placeholder="Email">
-                            <input type="password" placeholder="Password">
+                        <form id="RegForm" action="/server">
+                            <label for="user2"></label>
+                            <input type="text" id="user2" name="userName" placeholder="Username">
+                            <label for="email"></label>
+                            <input type="email" id="email" name="email" placeholder="Email">
+                            <label for="pass2"></label>
+                            <input type="password" id="pass2" name="password" placeholder="Password">
                             <button type="submit" class="btn">Register</button>
 
                         </form>
@@ -75,12 +81,12 @@
                     <p>Download App For Android & IOS<br> Mobile Phone</p>
                 </div>
                 <div class="footer-col-2">
-                    <img src="/images/logo-white.png">
+                    <img src="images/logo-white.png">
                     <p>Our Purpose is to sustainably Make The Pleasure & Benefits of Sports Accessible to the Many
                     </p>
                     <div class="app-logo">
-                        <img src="/images/play-store.png">
-                        <img src="/images/app-store.png">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
                     </div>
 
                 </div>
@@ -105,7 +111,7 @@
 
             </div>
             <hr>
-            <p class="copyright">Copyright 2022 - COER</p>
+            <p class="copyright">Copyright 2022 - ANMOL</p>
         </div>
     </div>
 
